@@ -387,28 +387,11 @@
           margin-bottom: 5%;
           gap: 3%
         }
-
-        .listado_cruce{
+        .listado_cruce_desktop{
             margin-top: 5px;
             width: 90%;
             height: 110vh;
            }
-
-        .container_slidercruce{
-            display: grid;
-            grid-template-areas:
-            "description img";
-            grid-template-columns: 1fr 0.3fr;
-             justify-content: center;
-            align-items: center;
-            margin-left: 50px;
-            margin-right: -25px;
-            margin-top: -15px;
-        }
-        .img_cruce{ 
-            width: 120vh;
-            height: 80vh;
-        }
 
         .listado_crucecomer{
           margin-top: 5px;
@@ -416,22 +399,7 @@
           height: 80vh;
          }
 
-      .container_slidercrucecomer{
-          display: grid;
-          grid-template-areas:
-          "description img";
-          grid-template-columns: 1fr 0.3fr;
-           justify-content: center;
-          align-items: center;
-          margin-left: 50px;
-          margin-right: -25px;
-          margin-top: -15px;
-      }
-      .img_crucecomer{ 
-          width: 120vh;
-          height: 80vh;
-      }   
-     
+
         .container_sakura{
           width:100%; 
           max-width: 1200px;
@@ -458,20 +426,6 @@
             margin-left: 15px;
            }
 
-        .container_slidersakura{
-            display: grid;
-            grid-template-areas:
-            "description img";
-            grid-template-columns: 2fr 0.5fr;
-           justify-content: center;
-            align-items: center;
-        }
-        .img_sakura{ 
-            width: 100vh;
-            height: 90%;
-            margin: 0;
-            padding: 0;
-        }
             .container_sm{
           width:100%; 
           max-width: 1200px;
@@ -490,22 +444,6 @@
             width: 90%;
             height: 80vh;
            }
-
-        .container_slidersm{
-            display: grid;
-            grid-template-areas:
-            "description img";
-            grid-template-columns: 1fr 0.3fr;
-             justify-content: center;
-            align-items: center;
-            margin-left: 50px;
-            margin-right: -25px;
-            margin-top: -15px;
-        }
-        .img_sm{ 
-            width: 120vh;
-            height: 80vh;
-        }
 
       }
 
