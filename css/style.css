@@ -129,15 +129,15 @@
       width: 100%;
       height: 100%;
       border: none;
-      margin-top: -90%;
+      margin-top: -100%;
     }
      .description{
-       font-size: 12px;
+       font-size: 11px;
        color:#858585;
        text-align:left;
       justify-content: center;
       align-items: center;
-      margin-left: -50px;
+      margin-left: 10px;
      }     
      .DESKTOP{
       display: none;
@@ -154,10 +154,10 @@
       justify-content: center;
        align-items: center;
       }
-      .listado_sakura_mobile{
+      .listado_mobile{
           margin-top: 5px;
-          width: 60vh;
-          height: 155vh;
+          width: 100%;
+          height: 100%;
          }
 /*EL CRUCE DEL PILAR*/
      .container_cruce{
@@ -168,17 +168,7 @@
      justify-content: center;
       align-items: center;
      }
-     .listado_cruce_mobile{
-         margin-top: 25px;
-         width: 60vh;
-         height: 100vh;
-        }
-/*EL CRUCE DEL PILAR*/
- .listado_crucemobilecomerciales{
-     margin-top: 25px;
-     width: 60vh;
-     height: 85vh;
-    }
+
 /*SANTA MARIA I*/
 .container_sm{
   display: grid;
@@ -188,23 +178,6 @@
  justify-content: center;
   align-items: center;
  }
- .listado_smmobile{
-     margin-top: 25px;
-     width: 60vh;
-     height: 100vh;
-    }
-/*SANTA MARIA I COMERCIALES*/
-.listado_mobilesmc{
-     margin-top: 25px;
-     width: 60vh;
-     height: 80vh;
-    }
-
-
-
-
-
-
    }  
 
  @media only screen and (min-width: 768px) {
