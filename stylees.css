@@ -15,7 +15,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #05315a;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -25,12 +25,22 @@ header h1 {
     font-size: 2.5em;
 }
 
-header nav {
+header nav{
     margin-top: 10px;
 }
 
-header nav a {
-    color: white;
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav{
+    margin-top: 10px;
+}
+
+.nav a {
+    color: rgb(7, 7, 7);
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -42,6 +52,12 @@ header nav a:hover {
 section {
     margin-top: 30px;
 }
+
+/* Estilo para resaltar la fila */
+.resaltada {
+    background-color: #90b4d493; /* Color de fondo gris claro */
+  }
+  
 
 table {
     width: 100%;
