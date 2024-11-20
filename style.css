@@ -40,13 +40,28 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+#Bolsa{
+    font-size: 17px;
+    color: #7faeda;
+}
+
+#Dolar{
+    font-size: 17px;
+    color: #4CAF50;
+}
+
+.reserva h4{
+    margin-top: 25px;
+}
+
+.reserva p {
+    font-size: 12px;
+}
 section {
     margin-top: 30px;
 }
 
-.reservado{
-    background-color: #347c36a8;
-}
+
 /* Estilo para resaltar la fila */
 .resaltada {
     background-color: #90b4d493; /* Color de fondo gris claro */
@@ -128,26 +143,7 @@ footer {
     color: #333;
   }
   
-  @media (max-width: 768px) {
-    .grid-barrios {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-  
-    .barrio-item h3 {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .grid-barrios {
-      grid-template-columns: 1fr; /* Una sola columna en móviles */
-    }
-  
-    .barrio-item h3 {
-      font-size: 14px;
-    }
-  }
-  
+ 
   /* Contenedor principal del bloque */
 /* Título principal con líneas arriba y abajo */
 .condiciones-container h2 {
@@ -176,11 +172,10 @@ footer {
     bottom: 0; /* Línea abajo del texto */
   }
   
-  
   /* Subtítulo de la reserva */
   .reserva h3 {
     font-size: 20px;
-    color: #4CAF50; /* Color verde para resaltar */
+    color: #619fda;
     margin-bottom: 15px;
   }
 
@@ -188,6 +183,14 @@ footer {
     font-size: 10px;
     color: #4CAF50; /* Color verde para resaltar */
     margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .Gastospesos{
+    font-size: 10px;
+    color: #619fda;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
   
   .reserva span {
@@ -218,6 +221,26 @@ footer {
   }
   
   /* Estilos Responsive */
+
+  @media (max-width: 768px) {
+    .grid-barrios {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .barrio-item h3 {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-barrios {
+      grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+  
+    .barrio-item h3 {
+      font-size: 14px;
+    }
+  }
   
   /* Para pantallas de hasta 768px (Tabletas) */
   @media (max-width: 768px) {
@@ -274,3 +297,128 @@ footer {
     }
   }
   
+
+
+   /* Contenedor principal de las condiciones */
+   .condiciones-containersakura{
+    display: flex;
+    justify-content: space-between; /* Espacio entre las dos secciones */
+    gap: 30px; /* Separación entre las dos columnas */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+
+  /* Estilo común para las columnas de condiciones (USD y Pesos) */
+  .condiciones-columnsakura {
+    flex: 1; /* Hace que las columnas tengan el mismo tamaño */
+  }
+
+  /* Título principal */
+  .condiciones-columnsakura h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 0;
+  }
+
+  /* Pseudo-elementos para las líneas arriba y abajo del título */
+  .condiciones-columnsakura h2::before,
+  .condiciones-columnsakura h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .condiciones-columnsakura h2::before {
+    top: 0;
+  }
+
+  .condiciones-columnsakura h2::after {
+    bottom: 0;
+  }
+
+  /* Subtítulo de la reserva */
+  .reservasakura h3 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+
+  .reservasakura span {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  /* Características del lote */
+  .caracteristicassakura h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .caracteristicassakura ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .caracteristicassakura li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  .caracteristicassakura li strong {
+    color: #333;
+  }
+
+  /* Estilos específicos para los valores en USD */
+  .precio-usdsakura {
+    color: #4CAF50; /* Verde para USD */
+  }
+
+  /* Estilos específicos para los valores en Pesos */
+  .precio-pesossakura {
+    color: #00BFFF; /* Celeste para Pesos */
+  }
+
+
+  /* Estilos para la leyenda o referencia de colores */
+  .leyenda {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .leyenda div {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espaciado entre el cuadrado de color y el texto */
+  }
+
+  .cuadrado-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .descripcion-color {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .noDisponibles{
+    background-color: rgba(128, 128, 128, 0.747);
+  }
+
+  .reservado{
+    background-color: #347c36a8;
+}

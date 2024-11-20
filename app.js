@@ -1,6 +1,17 @@
 var Dolar = 1120
 var Bolsa = 11033
 
+    // Obtener el elemento por su ID (en este caso, el <span> con id="precio")
+    var elementoPrecio = document.getElementById('Bolsa');
+
+    // Insertar el valor de la variable en el contenido del elemento
+    elementoPrecio.textContent = "$" + " "+ (Bolsa.toLocaleString());
+
+        // Obtener el elemento por su ID (en este caso, el <span> con id="precio")
+        var elementoPrecio = document.getElementById('Dolar');
+
+        // Insertar el valor de la variable en el contenido del elemento
+        elementoPrecio.textContent = "$" + " "+ (Dolar.toLocaleString());
 
 window.onload = function() {
     // Lista de los lotes disponibles (IDs de los lotes presentes en el HTML)
