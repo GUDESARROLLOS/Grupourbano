@@ -4,36 +4,19 @@ var Bolsa = 11033
 
 // Lista de lotes y sus valores en USD
 const lotesV = [
-    { nombre: 'L1SM', valorUSD: 22000 },
-    { nombre: 'L2SM', valorUSD: 22000 },
-    { nombre: 'L3SM', valorUSD: 22000 },
-    { nombre: 'L4SM', valorUSD: 22000 },
-    { nombre: 'L5SM', valorUSD: 22000 },
-    { nombre: 'L6SM', valorUSD: 20000 },
-    { nombre: 'L7SM', valorUSD: 19000 },
-    { nombre: 'L8SM', valorUSD: 19000 },
-    { nombre: 'L9SM', valorUSD: 23000 },
-    { nombre: 'L10SM', valorUSD: 23000 },
-    { nombre: 'L13SM', valorUSD: 23000 },
-    { nombre: 'L15SM', valorUSD: 27000 },
-    { nombre: 'L16SM', valorUSD: 28000 },
-    { nombre: 'L34SM', valorUSD: 25000 },
-    { nombre: 'L35SM', valorUSD: 26000 },
-    { nombre: 'L36SM', valorUSD: 27000 },
-    { nombre: 'L39SM', valorUSD: 23000 },
-    { nombre: 'L40SM', valorUSD: 23000 },
-    { nombre: 'L41SM', valorUSD: 22000 },
-    { nombre: 'L42SM', valorUSD: 21000 },
-    { nombre: 'L43SM', valorUSD: 22000 },
-    { nombre: 'L44SM', valorUSD: 21000 },
+    { nombre: 'L14EC', valorUSD: 28000 },
+    { nombre: 'L23EC', valorUSD: 26000 },
+    { nombre: 'L31EC', valorUSD: 24000 },
+    { nombre: 'L32EC', valorUSD: 24500 },
+    { nombre: 'L36EC', valorUSD: 19000 },
+    { nombre: 'L44EC', valorUSD: 18000 },
+
 ];
 
 // Llamada inicial para cada lote
 window.onload = function() {
     const lotesDisponiblesSM = [
-        'L1SM', 'L2SM', 'L3SM', 'L4SM', 'L5SM', 'L6SM', 'L7SM', 'L8SM', 'L9SM',
-        'L10SM', 'L13SM', 'L15SM', 'L16SM', 'L34SM', 'L35SM', 'L36SM', 'L39SM', 'L40SM',
-        'L41SM', 'L42SM', 'L43SM', 'L44SM'
+      'L14EC','L23EC','L31EC','L32EC','L36EC','L44EC'
     ];
 
     // Iterar sobre los lotes disponibles
