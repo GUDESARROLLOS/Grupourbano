@@ -35,15 +35,6 @@ header a {
     font-size: 1.2em;
 }
 
-.nav{
-    margin-top: 10px;
-}
-
-.nav a {
-    color: rgb(7, 7, 7);
-    text-decoration: none;
-    font-size: 1.2em;
-}
 
 header nav a:hover {
     text-decoration: underline;
@@ -53,6 +44,9 @@ section {
     margin-top: 30px;
 }
 
+.reservado{
+    background-color: #347c36a8;
+}
 /* Estilo para resaltar la fila */
 .resaltada {
     background-color: #90b4d493; /* Color de fondo gris claro */
@@ -103,3 +97,180 @@ footer {
     padding: 10px;
     border-radius: 8px;
 }
+
+.grid-barrios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+.grid-barrios a{
+    text-decoration: none;
+}
+  
+  .barrio-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #05315a6c;
+  }
+  
+  .barrio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .barrio-item h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-barrios {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .barrio-item h3 {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-barrios {
+      grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+  
+    .barrio-item h3 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Contenedor principal del bloque */
+/* Título principal con líneas arriba y abajo */
+.condiciones-container h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative; /* Asegura que las líneas estén en la misma posición que el texto */
+    padding: 10px 0; /* Padding vertical para separar el texto de las líneas */
+  }
+  
+  .condiciones-container h2::before,
+  .condiciones-container h2::after {
+    content: ''; /* Necesario para crear pseudo-elementos */
+    position: absolute; /* Colocarlos en la misma línea */
+    left: 0;
+    width: 100%; /* Hacer que la línea ocupe todo el ancho del contenedor */
+    border-bottom: 2px solid #ddd; /* Línea de 2px de grosor */
+  }
+  
+  .condiciones-container h2::before {
+    top: 0; /* Línea arriba del texto */
+  }
+  
+  .condiciones-container h2::after {
+    bottom: 0; /* Línea abajo del texto */
+  }
+  
+  
+  /* Subtítulo de la reserva */
+  .reserva h3 {
+    font-size: 20px;
+    color: #4CAF50; /* Color verde para resaltar */
+    margin-bottom: 15px;
+  }
+
+  .Gastos{
+    font-size: 10px;
+    color: #4CAF50; /* Color verde para resaltar */
+    margin-bottom: 15px;
+  }
+  
+  .reserva span {
+    font-weight: bold;
+    font-size: 24px; /* Resaltar el porcentaje */
+  }
+  
+  /* Características del lote */
+  .caracteristicas h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .caracteristicas ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+  }
+  
+  .caracteristicas li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px; /* Espaciado entre características */
+  }
+  
+  .caracteristicas li strong {
+    color: #333; /* Resaltar los títulos de cada característica */
+  }
+  
+  /* Estilos Responsive */
+  
+  /* Para pantallas de hasta 768px (Tabletas) */
+  @media (max-width: 768px) {
+    .condiciones-container {
+      padding: 15px; /* Menos padding en pantallas más pequeñas */
+    }
+  
+    .condiciones-container h2 {
+      font-size: 22px; /* Reducir tamaño del título */
+    }
+  
+    .reserva h3 {
+      font-size: 18px; /* Reducir tamaño de la reserva */
+    }
+  
+    .reserva span {
+      font-size: 22px; /* Reducir tamaño del porcentaje */
+    }
+  
+    .caracteristicas h3 {
+      font-size: 18px; /* Reducir tamaño del subtítulo */
+    }
+  
+    .caracteristicas li {
+      font-size: 14px; /* Reducir tamaño de las características */
+    }
+  }
+  
+  /* Para pantallas de hasta 480px (Móviles) */
+  @media (max-width: 480px) {
+    .condiciones-container {
+      padding: 10px; /* Aumentar la reducción de padding en móviles */
+      margin-top: 20px; /* Reducir el margen superior */
+    }
+  
+    .condiciones-container h2 {
+      font-size: 20px; /* Reducir aún más el tamaño del título */
+    }
+  
+    .reserva h3 {
+      font-size: 16px; /* Reducir el tamaño de la reserva */
+    }
+  
+    .reserva span {
+      font-size: 20px; /* Reducir el tamaño del porcentaje */
+    }
+  
+    .caracteristicas h3 {
+      font-size: 16px; /* Reducir tamaño del subtítulo */
+    }
+  
+    .caracteristicas li {
+      font-size: 13px; /* Reducir tamaño de las características */
+    }
+  }
+  
