@@ -13,16 +13,32 @@ body {
     padding: 20px;
 }
 
+/* Estilos para el header */
 header {
-    text-align: center;
-    background-color: #05315a;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
+  background-color: #051c35;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column; /* Alineamos los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+header .logo img {
+  width: 100px; /* Ajusta el tamaño del logo */
+  height: 70px; /* Ajusta el tamaño del logo */
+  object-fit: cover; /* Asegura que la imagen mantenga la proporción */
+  margin-bottom: 20px; /* Añade un poco de espacio debajo del logo */
 }
 
 header h1 {
-    font-size: 2.5em;
+  font-size: 36px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px; /* Añade un poco de espacio entre el título y la descripción */
 }
 
 header nav{
@@ -421,4 +437,144 @@ footer {
 
   .reservado{
     background-color: #347c36a8;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  flex-shrink: 0; /* Evita que el footer se encoja */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .grid-barrios {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas medianas */
+  }
+
+  .barrio-item h3 {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .grid-barrios {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  .barrio-item h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+}
+
+/* Contenedor principal del grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los contenedores */
+  margin-top: 30px;
+}
+
+/* Contenedor individual de cada sección */
+.grid-item {
+  background: #f0f4f8; /* Fondo suave gris claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px; /* Altura fija para los contenedores */
+  position: relative;
+}
+
+/* Estilo para el icono y el texto en el contenedor */
+.grid-item i {
+  font-size: 40px;
+  color: #007bff; /* Color azul para los iconos */
+  margin-bottom: 15px;
+}
+
+.grid-item a {
+text-decoration: none;
+color: black;
+}
+
+.grid-item p {
+  font-size: 14px;
+  color: #555; /* Color del texto */
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Contenedor de la descripción */
+.descripcion {
+  flex-grow: 1;
+  background: #ccebfa; /* Fondo azul muy claro para la descripción */
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Efecto de hover para cada item */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsividad: cuando la pantalla sea pequeña (menos de 768px) */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
 }
